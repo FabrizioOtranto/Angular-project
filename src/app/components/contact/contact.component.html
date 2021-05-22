@@ -1,0 +1,16 @@
+<div class = 'container'>
+<h1>Contacto</h1>
+
+Tamano del slider:
+<input class = 'last-button' type='number' [(ngModel)] = 'widthSlider'/> <br/>
+<button class = 'last-button1' (click) = 'cargarSlider()'>Cargar slider</button> 
+<button class = 'last-button2' (click) = 'resetearSlider()'>Resetear slider</button>
+    
+<div *ngIf = 'anchuraToSlider'>
+<slider [anchura] = 'anchuraToSlider'
+        [etiquetas] = 'captions' 
+                            ></slider>
+
+
+</div>
+</div>
